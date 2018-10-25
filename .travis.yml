@@ -15,7 +15,7 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - libstdc++-5-devo
+      - libstdc++-5-dev
 
 install:
   - npm install elementary/houston#v2-build-fix
