@@ -24,7 +24,7 @@ install:
   - cd ~/houston && npm run build
 
 script:
-  - ~/houston/dest/bin.js ci
+  - node ~/houston/dest/bin.js ci
     --type system-app
     --name-appstream io.elementary.code.desktop
     --name-domain io.elementary.code
