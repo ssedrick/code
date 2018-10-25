@@ -15,21 +15,10 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - libstdc++-5-dev
-
-cache:
-  directories:
-    - /tmp/liftoff
-
-matrix:
-  include:
-    - env: DIST=juno
-
-before_install:
-  - docker pull ubuntu:18.04
+      - libstdc++-5-devo
 
 install:
-  - npm install @elementaryos/houston
+  - npm install elementary/houston#v2-build-fix
 
 script:
   - houston ci
@@ -37,4 +26,3 @@ script:
     --name-appstream io.elementary.code.desktop
     --name-domain io.elementary.code
     --name-human Code
-    --distribution $DIST
