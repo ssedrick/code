@@ -18,10 +18,12 @@ addons:
       - libstdc++-5-dev
 
 install:
-  - npm install elementary/houston#v2-build-fix
+  - cd ~/ && npm install elementary/houston#v2-build-fix
+  - cd ~/node_modules/@elementaryos/houston && npm ci
+  - cd ~/node_modules/@elementaryos/houston && npm run build
 
 script:
-  - houston ci
+  - ~/node_modules/@elementaryos/houston/dest/bin.js ci
     --type system-app
     --name-appstream io.elementary.code.desktop
     --name-domain io.elementary.code
