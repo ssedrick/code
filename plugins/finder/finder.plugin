@@ -1,0 +1,8 @@
+[Plugin]
+Module=finder
+Loader=C
+IAge=2
+Name=Finder
+Description=Quickly find and open files
+Authors=Shem Sedrick <ssedrick1@gmail.com
+Website=https://github.com/elementary/code
